@@ -1,0 +1,80 @@
+/* removes shadow under tabs */
+.tab-background[selected] {
+  box-shadow: none !important;
+}
+
+/* linux fix for close min and max buttons to the right */
+.titlebar-buttonbox {
+  padding-right: 0.5rem;
+}
+
+/* spacing on non-pinned tabs */
+.tab-content:not([pinned]) {
+  padding: 0 1rem 0 1.5rem !important;
+}
+
+/* spacing on pinned tabs */
+.tab-content[pinned] {
+  padding: 0 1rem !important;
+}
+
+/* rounding tabs */
+.tab-background {
+  border-radius: 0.5rem !important;
+}
+
+/* rounded url bar */
+.urlbar-background {
+  border-radius: 1rem !important;
+}
+
+/* close min and max buttons styling */
+.titlebar-button > .toolbarbutton-icon {
+  border-radius: 0.5rem !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+/* hides close min and max buttons */
+.tabbrowser-tab:not([pinned]) .tab-close-button {
+  display: none !important;
+}
+
+/* shows close min and max buttons on hover */
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  display: inline-flex !important;
+}
+
+/* removing useless spacer */
+.titlebar-spacer {
+  display: none !important;
+}
+
+/* adding margin to the left of tabs */
+#TabsToolbar {
+  margin-left: 0.25rem;
+}
+
+/* removed sidebar border */
+#sidebar-splitter {
+  background-color: transparent !important;
+  border: none !important;
+  border-style: none !important;
+}
+
+/* history search box padding */
+#sidebar-search-container {
+  padding: 10px 10px 10px 20px !important;
+}
+
+/* history search styling */
+:root #search-box {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  background-color: transparent !important;
+}
+
+/* history header hidden */
+#sidebar-header {
+  display: none !important;
+}
