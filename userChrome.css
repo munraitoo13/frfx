@@ -3,11 +3,6 @@
   box-shadow: none !important;
 }
 
-/* linux fix for close min and max buttons to the right */
-.titlebar-buttonbox {
-  padding-right: 0.5rem;
-}
-
 /* spacing on non-pinned tabs */
 .tab-content:not([pinned]) {
   padding: 0 1rem 0 1.5rem !important;
@@ -28,13 +23,6 @@
   border-radius: 1rem !important;
 }
 
-/* close min and max buttons styling */
-.titlebar-button > .toolbarbutton-icon {
-  border-radius: 0.5rem !important;
-  width: 32px !important;
-  height: 32px !important;
-}
-
 /* hides close min and max buttons */
 .tabbrowser-tab:not([pinned]) .tab-close-button {
   display: none !important;
@@ -52,7 +40,7 @@
 
 /* adding margin to the left of tabs */
 #TabsToolbar {
-  margin-left: 0.25rem;
+  margin-left: 0.1rem;
 }
 
 /* removed sidebar border */
@@ -77,4 +65,25 @@
 /* history header hidden */
 #sidebar-header {
   display: none !important;
+}
+
+/* tab group */
+.tab-group-label {
+  outline: none !important;
+  padding: 2.5px 10px !important;
+  cursor: pointer !important;
+}
+
+/* titlebar buttons */
+.titlebar-button {
+  padding: 1rem !important;
+  height: fit-content !important;
+  border-radius: 4px !important;
+}
+
+/* titlebar button box */
+.titlebar-buttonbox {
+  display: flex !important;
+  align-items: center !important;
+  margin-right: 0.35rem !important;
 }
